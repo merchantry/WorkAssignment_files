@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///C:/Users/User/Documents/SublimeTextDocs/DepositFixAssignment.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Test Assignment</title>
+    <style>
+        body {
+            padding: 0px 0px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        pre {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin-bottom: 50px;
+        }
+
+        form {
+            width: 250px;
+            height: 235px;
+            background-color: #48a0e2;
+            justify-content: center;
+            border-radius: 5px;
+            margin: 0px;
+            padding-top: 15px;
+        }
+        fieldset {
+            height: 60px;
+            width: 250px;
+            border-width: 0;
+            display: block;
+            margin: auto;
+            text-align: center;
+            margin: 20px 0px 5px 0px;
+            padding: 0px;
+        }
+        select {
+            margin: auto;
+            margin-top: 2px;
+            display: block;
+            width: 170px;
+            height: 23px;
+            border: 0px;
+            border-radius: 3px;
+        }
+        label{
+            margin-top: 10px;
+            margin: auto;
+            color: white;
+            margin-right: 125px;
+        }
+        input{
+            margin: auto;
+            display: block;
+            width: 170px;
+            height: 23px;
+            border: 0px;
+            border-radius: 3px;
+        }
+        div {
+            height: 250px;
+            width: 250px;
+        }
+        button {
+            border: 0px;
+            border-radius: 3px;
+            height: 27px;
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <form action="file:///C:/">
+            <fieldset>
+                <label >Email</label>
+                <input type="text" value="" name="email">
+            </fieldset>
+            <fieldset>
+                <label>Steps</label>
+                <select name="steps" id="optionList" onchange="showOption()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </fieldset>
+            <fieldset>
+                <button type="submit" id="submitButton">Submit<script type="text/javascript">document.write(value);</script></button>
+            </fieldset>
+        </form>
+    </div>
+
+<script type="text/javascript">
+    function showOption () {
+        var selector = document.getElementById('optionList');
+        var value = selector[selector.selectedIndex].value;
+        document.getElementById('submitButton').innerHTML = "Submit " + value;
+    }
+</script>
+
+</body></html>
